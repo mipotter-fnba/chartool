@@ -11,7 +11,7 @@ public class JsonUtil {
         StringBuilder json = new StringBuilder();
 
         for (int i = 0; i < strings.size(); i++) {
-            json.append("'").append(strings.get(i)).append( "'");
+            json.append("'" + strings.get(i) + "'");
 
             if (i < strings.size() - 1) {
                 json.append(",");
@@ -44,12 +44,7 @@ public class JsonUtil {
 
         for (int i = 0; i < dataItems.size(); i++) {
             PointDataItem pointDataItem = dataItems.get(i);
-            json
-                    .append("{x: ")
-                    .append(pointDataItem.getX())
-                    .append(", y: ")
-                    .append(pointDataItem.getY())
-                    .append("}");
+            json.append("{x: " + pointDataItem.getX() + ", y: " + pointDataItem.getY() + "}");
 
             if (i < dataItems.size() - 1) {
                 json.append(",");
