@@ -97,7 +97,7 @@
     </dependencies>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>21</java.version>
         <sonar.organization>mipotter-fnba</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
