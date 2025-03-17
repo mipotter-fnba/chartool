@@ -70,7 +70,7 @@ public class Charts {
      */
     public List<Dashboard> getDashboard() {
         if (dashboard == null) {
-            dashboard = new ArrayList<Dashboard>();
+            dashboard = new ArrayList<>();
         }
         return this.dashboard;
     }
