@@ -10,11 +10,7 @@ package za.co.rin.chartool.generated;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.*;
 
 
 /**
@@ -51,7 +47,7 @@ public class Charts {
      * 
      * <p>
      * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
+     * not a snapshot. Therefore, any modification you make to the
      * returned list will be present inside the JAXB object.
      * This is why there is not a <CODE>set</CODE> method for the dashboard property.
      * 
@@ -70,7 +66,7 @@ public class Charts {
      */
     public List<Dashboard> getDashboard() {
         if (dashboard == null) {
-            dashboard = new ArrayList<Dashboard>();
+            dashboard = new ArrayList<>();
         }
         return this.dashboard;
     }
